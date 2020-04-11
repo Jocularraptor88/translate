@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function Translate(){
+	var english=document.getElementById("jfk").value;
+	var dict={"black":"noir","yellow":"jaune"};
+	var french=dict[english];
+	document.getElementById("no").innerHTML=french;
+}
+</script>
+<style>
+body {font-family:"arial"; font-size:18px}
+</style>
+</head>
+<body>
+<input id="jfk"></input>
+<button onclick="Translate()">Translate</button>
+<div id="no">Translation will appear here</div>
+</body>
+</html>
